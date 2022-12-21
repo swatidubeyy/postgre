@@ -1,0 +1,6 @@
+--Ensure the column shouldn't have NULL values 
+
+Query --->>>>
+          select count(*) from "vw_apprenticeship" WHERE "ID" IS NULL		 
+    
+O/P --->>> 2 null values 
