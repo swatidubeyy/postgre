@@ -1,0 +1,6 @@
+--To validate the source and target tables record count
+
+query --->>
+    select count(*) from "vw_naps_apprenticeship_candidate_data"
+    
+O/P --->> count : 7727593
