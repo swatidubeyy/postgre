@@ -1,0 +1,10 @@
+--to format validation of "Date of Birth"
+
+query --->>>
+          SELECT DATA_TYPE
+          FROM INFORMATION_SCHEMA.COLUMNS
+          WHERE TABLE_NAME ='vw_apprenticeship'
+          AND COLUMN_NAME IN ('Date of Birth')
+          
+          
+O/P --->>> Date
