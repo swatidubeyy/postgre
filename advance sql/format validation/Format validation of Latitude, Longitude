@@ -1,0 +1,12 @@
+--The latitude and longitude, if present will always appear in the form of (X, Y) where X and Y are decimal numbers.
+  For a valid (latitude, longitude) pair: -90<=X<=+90 and -180<=Y<=180. 
+  
+  query ---->>>
+              SELECT DATA_TYPE
+              FROM INFORMATION_SCHEMA.COLUMNS
+              WHERE TABLE_NAME ='vw_naps_apprenticeship_candidate_data'
+              AND COLUMN_NAME IN ('Lat','Long')
+              
+              
+O/P ---->>>> "double precision"
+             "double precision"
