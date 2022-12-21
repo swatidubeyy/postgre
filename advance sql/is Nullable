@@ -1,0 +1,14 @@
+--To Check the Constraints
+
+query ---->>>
+       SELECT COLUMN_NAME,IS_NULLABLE
+       FROM INFORMATION_SCHEMA.COLUMNS
+       WHERE TABLE_NAME ='btp_master'
+       and IS_NULLABLE = 'NO'
+       ORDER BY ORDINAL_POSITIO
+       
+O/P ---->>>   COLUMN_NAME      IS_NULLABLE
+              crt_date	          NO
+              upd_date	          NO
+              code	              NO
+              id	                NO
