@@ -1,0 +1,13 @@
+--To confirm that records are unique for a particular ID
+
+query --->>>
+    SELECT "ID", COUNT(*) as Duplicate FROM "vw_apprenticeship" GROUP BY 1 HAVING COUNT(*) > 1
+    
+    
+    
+O/P -->>
+          ID          Duplicate
+      A012000184	      2
+      A012000242	      2
+      A012000266	      2
+      A012000414	      2
