@@ -1,0 +1,11 @@
+--To validate the structure validation/ correctness by comparing with Data Model document 
+
+SELECT  CONCAT(DATA_TYPE, ' : ', Count(*)) as DataType
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME ='vw_apprenticeship'
+group by DATA_TYPE order by DATA_TYPE
+
+o/p = varchar : 56
+Source Views  : vw_apprenticeship
+Expected res  : Validation of Data type for Colmns present in Target table .
+                 Target DDLs columns should be as per defination.
