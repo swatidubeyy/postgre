@@ -2,7 +2,7 @@
 Query ---->>>>>>>
             SELECT distinct DATA_TYPE
             FROM INFORMATION_SCHEMA.COLUMNS
-            WHERE TABLE_NAME ='vw_naps_apprenticeship_candidate_data'
+            WHERE TABLE_NAME ='vw_apprenticeship'
             AND COLUMN_NAME IN ('Marks','Start_Year','Start_Month','End_Year','End_Month','Last Drawn Salary')
 
 
